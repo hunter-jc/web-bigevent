@@ -49,7 +49,7 @@ $(function () {
       data: $(this).serialize(),
       success: function (res) {
         if (res.status !== 0) {
-          return layer.msg(res.message);
+          return layer.msg("用户名或者密码输入错误请从新输入");
         }
         layer.msg(res.message);
         // 保存带有权限的token 用于有权限的登录

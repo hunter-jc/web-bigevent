@@ -42,3 +42,6 @@ body {
 .layui-input {
   padding-left: 30px;
 }
+a {
+  transition: none !important;
+}
