@@ -13,6 +13,7 @@ $.ajaxPrefilter(function (options) {
       Authorization: localStorage.getItem("token") || "",
     };
   }
+  // complete 无论是否执行成功 都会执行这个函数
   options.complete = function (res) {
     console.log(res);
     var data = res.responseJSON;
